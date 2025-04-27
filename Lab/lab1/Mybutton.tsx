@@ -1,6 +1,4 @@
-// MyButton.tsx
 import React from "react";
-// Import các kiểu cần thiết từ react và react-native
 import {
     TouchableOpacity,
     Text,
@@ -28,13 +26,11 @@ const MyButton: React.FC<MyButtonProps> = ({ text, onPress, style }) => {
     );
 };
 
-// Định nghĩa kiểu cho đối tượng styles
 interface Styles {
     buttonBase: ViewStyle;
     textBase: TextStyle;
 }
 
-// Tạo StyleSheet với kiểu đã định nghĩa
 const styles = StyleSheet.create<Styles>({
     buttonBase: {
         alignItems: "center",
